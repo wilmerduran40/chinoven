@@ -567,6 +567,71 @@ a {
 
 .whatsapp-fab:hover { transform: scale(1.08); }
 
+/* CALCULADORA CBM */
+.calc-page .quote-form { max-width: 720px; }
+
+.form-hint {
+  font-weight: 400;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.nav__link.is-active { color: var(--blue); }
+
+.calc-result {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 32px 40px;
+  box-shadow: var(--shadow);
+  max-width: 720px;
+  margin: 24px auto 0;
+}
+
+.calc-result[hidden] { display: none; }
+
+.calc-result__title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.calc-result__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.calc-result__item {
+  background: var(--bg-alt);
+  border-radius: 12px;
+  padding: 18px 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.calc-result__label {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.calc-result__value {
+  font-weight: 700;
+  color: var(--blue);
+  font-size: 1.1rem;
+}
+
+.calc-result__note {
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 /* RESPONSIVE */
 @media (max-width: 960px) {
   .hero__inner {
@@ -606,9 +671,11 @@ a {
   .nav__link--cta { width: 100%; text-align: center; }
 
   .form-grid { grid-template-columns: 1fr; }
+  .calc-result__grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 560px) {
+  .calc-result { padding: 24px; }
   .steps { grid-template-columns: 1fr; }
   .quote-form { padding: 26px; }
   .section { padding: 60px 0; }
